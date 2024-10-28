@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "ES TEAMS",
+  "author": "SIGH",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
