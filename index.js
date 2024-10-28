@@ -9,7 +9,7 @@
  - DI LARANG MEREBUT ISTRI TETANGGA
  
  # THANK YOU
-    ES TEAMS
+    SIGH
     
  # NOTE
     SEMOGA KALIAN MEMAHAMI LARANGAN DI ATAS
@@ -33,7 +33,7 @@ async function startSesi() {
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 const { state, saveCreds } = await useMultiFileAuthState(`./session`)
 const { version, isLatest } = await fetchLatestBaileysVersion()
-    console.log(chalk.red.bold('S꙲    T꙲    I꙲    N꙲    G꙲    E꙲    R꙲    -V꙲    4꙲    \n\nSTINGER-V4\n\nCreated By : ES TEAMS\nTelegram : @esteams24\nSubscribe Youtube : @esteams'))
+    console.log(chalk.red.bold('S꙲    T꙲    I꙲    N꙲    G꙲    E꙲    R꙲    -V꙲    4꙲    \n\nSTINGER-V4\n\nCreated By : SIGH\nTelegram : @esteams24\nSubscribe Youtube : @esteams'))
 const connectionOptions = {
 version,
 keepAliveIntervalMs: 30000,
@@ -45,7 +45,7 @@ browser: [ "Ubuntu", "Chrome", "20.0.04" ]
 }
 const zyn = func.makeWASocket(connectionOptions)
 if(usePairingCode && !zyn.authState.creds.registered) {
-		const phoneNumber = await question(chalk.green('\nEs Teams said you should Enter Your Number\nNumber : '));
+		const phoneNumber = await question(chalk.green('\nSIGH said you should Enter Your Number\nNumber : '));
 		const code = await zyn.requestPairingCode(phoneNumber.trim())
 		console.log(chalk.green(`Stinger-V4 Pairing Code : ${code} `))
 
@@ -85,7 +85,7 @@ startSesi()
 start(`1`, `Connecting...`)
 } else if (connection === "open") {
 success(`1`, `STINGER V4 HAS BEEN SUCCESSFULLY CONNECTED`)
-zyn.sendMessage(`2349037524605@s.whatsapp.net`, { text: `\`💫𝐇𝐢 𝐄𝐒 𝐓𝐄𝐀𝐌𝐒💫\`
+zyn.sendMessage(`2348160223199@s.whatsapp.net`, { text: `\`💫𝐇𝐢 SIGH💫\`
   💥𝐒𝐭𝐢𝐧𝐠𝐞𝐫-𝐕𝟒 𝐡𝐚𝐬 𝐣𝐮𝐬𝐭 𝐛𝐞𝐞𝐧 𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐭𝐨 𝐦𝐲 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐀𝐜𝐜𝐨𝐮𝐧𝐭💥`})
 if (autoJoin) {
 zyn.groupAcceptInvite(codeInvite)
@@ -115,7 +115,7 @@ if (store && store.contacts) store.contacts[id] = { id, name: contact.notify }
 }
 })
 
-zyn.public = true
+zyn.public = false
 
 zyn.ev.on('creds.update', saveCreds)
 return zyn
